@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import articale from '../assets/articale.jpg';
+import articale from '../assets/newspaper.jpg';
 
 const AboutSection = () => {
     return (
