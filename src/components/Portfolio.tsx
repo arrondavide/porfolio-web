@@ -156,7 +156,41 @@ const Portfolio = () => {
             setIsLoading(false);
         }, 2000);
 
-        return () => clearTimeout(timer);
+        // Add smooth scrolling behavior
+        const handleNavClick = (e: MouseEvent) => {
+            const target = e.target as HTMLAnchorElement;
+            if (target.hash) {
+                e.preventDefault();
+                const element = document.querySelector(target.hash);
+                if (element) {
+                    // Account for the fixed header height (adjust 80 to match your header height)
+                    const headerOffset = 80;
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+                // Close mobile menu after clicking
+                setIsMobileMenuOpen(false);
+            }
+        };
+
+        // Add click event listeners to all navigation links
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+        navLinks.forEach(link => {
+            link.addEventListener('click', handleNavClick as EventListener);
+        });
+
+        // Cleanup
+        return () => {
+            clearTimeout(timer);
+            navLinks.forEach(link => {
+                link.removeEventListener('click', handleNavClick as EventListener);
+            });
+        };
     }, []);
 
     const toggleMobileMenu = () => {
@@ -166,6 +200,23 @@ const Portfolio = () => {
     if (isLoading) {
         return <Loader />;
     }
+
+    // Create a reusable navigation links component
+    const NavigationLinks = ({ className = "", onClick = () => {} }) => (
+        <>
+            {["About", "Projects", "Skills", "Contact"].map((item) => (
+                <motion.a
+                    key={item}
+                    href={`#${item.toLowerCase()}`}
+                    whileHover={{ scale: 1.1 }}
+                    className={`hover:text-purple-500 transition-colors ${className}`}
+                    onClick={onClick}
+                >
+                    {item}
+                </motion.a>
+            ))}
+        </>
+    );
 
     return (
         <div className="min-h-screen bg-black text-gray-200">
@@ -184,16 +235,7 @@ const Portfolio = () => {
 
                         {/* Desktop Menu */}
                         <div className="hidden sm:flex gap-6">
-                            {["About", "Projects", "Skills", "Contact"].map((item) => (
-                                <motion.a
-                                    key={item}
-                                    href={`#${item.toLowerCase()}`}
-                                    whileHover={{ scale: 1.1 }}
-                                    className="hover:text-purple-500 transition-colors"
-                                >
-                                    {item}
-                                </motion.a>
-                            ))}
+                            <NavigationLinks />
                         </div>
                     </div>
 
@@ -207,17 +249,9 @@ const Portfolio = () => {
                                 className="sm:hidden overflow-hidden"
                             >
                                 <div className="py-4 flex flex-col gap-4">
-                                    {["About", "Projects", "Skills", "Contact"].map((item) => (
-                                        <motion.a
-                                            key={item}
-                                            href={`#${item.toLowerCase()}`}
-                                            whileHover={{ scale: 1.05 }}
-                                            className="hover:text-purple-500 transition-colors text-center"
-                                            onClick={() => setIsMobileMenuOpen(false)}
-                                        >
-                                            {item}
-                                        </motion.a>
-                                    ))}
+                                    <NavigationLinks 
+                                        className="text-center"
+                                    />
                                 </div>
                             </motion.div>
                         )}
