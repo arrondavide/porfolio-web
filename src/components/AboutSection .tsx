@@ -41,7 +41,7 @@ const AboutSection = () => {
                             viewport={{ once: true }}
                             className="absolute -bottom-6 left-6 bg-black/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg"
                         >
-                            <span className="text-purple-400 text-sm">🎮 Game Developer</span>
+                            {/* <span className="text-purple-400 text-sm">🎮 Game Developer</span> */}
                         </motion.div>
                         
                         <motion.div
@@ -51,7 +51,7 @@ const AboutSection = () => {
                             viewport={{ once: true }}
                             className="absolute -top-6 right-6 bg-black/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg"
                         >
-                            <span className="text-blue-400 text-sm">💻 Software Engineer</span>
+                            {/* <span className="text-blue-400 text-sm">💻 Software Engineer</span> */}
                         </motion.div>
                     </motion.div>
 
