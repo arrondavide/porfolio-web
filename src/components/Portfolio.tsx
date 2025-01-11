@@ -278,7 +278,7 @@ const Portfolio = () => {
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <a
-                                    href="https://github.com/arrondavid"
+                                    href="https://github.com/arrondavide"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-colors"
@@ -386,7 +386,7 @@ const Portfolio = () => {
                                     <h3 className="text-xl font-bold mb-2">{game.title}</h3>
                                     <p className="text-gray-400 mb-4">{game.description}</p>
                                     <div className="flex flex-wrap gap-4">
-                                        <a
+                                        {/* <a
                                             href={game.playLink}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -401,7 +401,7 @@ const Portfolio = () => {
                                             className="text-purple-500 hover:text-purple-400 transition-colors"
                                         >
                                             View Source →
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
                             </motion.div>
