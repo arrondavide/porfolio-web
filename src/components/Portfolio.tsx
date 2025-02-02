@@ -510,7 +510,7 @@ const Portfolio = () => {
                             <span className="text-purple-500">Phone:</span> (+94)706622302
                         </p>
                         <p>
-                            <span className="text-purple-500">Location:</span> Wattala, Sri Lanka
+                            <span className="text-purple-500">Location:</span> Al Rigga,Dubai
                         </p>
                     </div>
                 </div>
