@@ -545,6 +545,12 @@ const games = [
 
 const apps = [
     {
+        title: "Pimpanans decentralized",
+        description: "This is site which lets you autenticate with your waller and sell your products through the site,idea is basically to create website similar to Pump.fun buy to sell rare products",
+        demoLink: "https://pimpananas.vercel.app/",
+        githubLink: "https://pimpananas.vercel.app/"
+    },
+    {
         title: "Palm Payment System",
         description: "This Flutter app demonstrates a basic palm recognition system using a mobile device's camera. It captures an image of the user's palm, processes the image to generate a unique hash by converting it to grayscale and resizing it, and compares the generated hash with a pre-stored hash to verify if the palm matches. The app uses the camera package for real-time camera feed, and a floating action button allows users to capture and process their palm scan. This concept showcases a simple approach to biometric identification, which can be expanded with more advanced image processing techniques in the future.",
         demoLink: "",
