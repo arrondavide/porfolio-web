@@ -546,7 +546,7 @@ const games = [
 const apps = [
     {
         title: "Pimpanans decentralized",
-        description: "This is site which lets you autenticate with your waller and sell your products through the site,idea is basically to create website similar to Pump.fun buy to sell rare products",
+        description: "Pimpananas is a unique marketplace where users authenticate with their crypto wallet to list and sell rare products, similar to Pump.fun but focused on collectibles, gaming assets, NFTs, and luxury items. Acting as a middleman without handling transactions, Pimpananas connects buyers and sellers directly through WhatsApp, Telegram, or personal websites. With a techy, dark humor aesthetic and the motto Just Pimp it, the platform offers a seamless seller admin panel for managing listings while embracing a fun and edgy crypto-driven culture.",
         demoLink: "https://pimpananas.vercel.app/",
         githubLink: "https://pimpananas.vercel.app/"
     },
