@@ -522,21 +522,21 @@ const Portfolio = () => {
 const games = [
     {
         title: "Last Star Farers(LSF)",
-        description: "Procedurally generated RPG using custom engine and WebGL",
+        description: "A Game to travel,Explorer,Transact and Progress",
         videoSrc: videoFile1,
         playLink: "https://dungeoncrawler.game",
         githubLink: "https://github.com/arrondavid/dungeon-crawler"
     },
     {
         title: "Rusties",
-        description: "Brain-teasing puzzle game with over 100 unique levels",
+        description: "A Game which as a unique art style",
         videoSrc: videoFile2,
         playLink: "https://puzzlequest.game",
         githubLink: "https://github.com/arrondavid/puzzle-quest"
     },
     {
         title: "Interactive Augmented Reality with WhackMole game",
-        description: "Brain-teasing puzzle game with over 100 unique levels",
+        description: "AR INteractive Game",
         videoSrc: videoFile3,
         playLink: "https://puzzlequest.game",
         githubLink: "https://github.com/arrondavid/puzzle-quest"
@@ -546,7 +546,7 @@ const games = [
 const apps = [
     {
         title: "Pimpanans decentralized",
-        description: "Pimpananas is a unique marketplace where users authenticate with their crypto wallet to list and sell rare products, similar to Pump.fun but focused on collectibles, gaming assets, NFTs, and luxury items. Acting as a middleman without handling transactions, Pimpananas connects buyers and sellers directly through WhatsApp, Telegram, or personal websites. With a techy, dark humor aesthetic and the motto Just Pimp it, the platform offers a seamless seller admin panel for managing listings while embracing a fun and edgy crypto-driven culture.",
+        description: "Pimpananas is a unique crypto-powered marketplace for buying and selling rare collectibles, gaming assets, NFTs, and luxury items. Users authenticate with their wallets and list products, while transactions are secured through escrow. Buyers and sellers connect via WhatsApp, Telegram, or personal sites, with a seamless admin panel for managing listings. With a techy, edgy vibe and the motto Just Pimp it, Pimpananas brings a fun, secure, and decentralized experience to the world of rare item trading.",
         demoLink: "https://pimpananas.vercel.app/",
         githubLink: "https://pimpananas.vercel.app/"
     },
