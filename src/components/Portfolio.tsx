@@ -509,9 +509,7 @@ const Portfolio = () => {
                         <p className="mb-4">
                             <span className="text-purple-500">Phone:</span> (+94)706622302
                         </p>
-                        <p>
-                            <span className="text-purple-500">Location:</span> Al Rigga,Dubai
-                        </p>
+                        
                     </div>
                 </div>
             </section>
